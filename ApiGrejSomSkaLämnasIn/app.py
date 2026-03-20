@@ -15,7 +15,7 @@ DB_CONFIG = {
 
 @app.route('/', methods=['GET'])
 def index():
-    return "/users för att se alla användare, /users/id för att se en specifik användare."
+    return """Hej och välkommen till min API! /users för att se alla användare, /users/id för att se en specifik användare. { "username" : "glugs", "email" : "banana@banan.com",	"name" : "glugfs", 	"password" : "patatr" }"""
 
 def get_db_connection():
     try:
